@@ -355,6 +355,32 @@ export default {
     selectLanguage: '言語を選択'
   },
 
+  // Purchase Orders
+  purchaseOrder: {
+    createPO: '発注書を作成',
+    viewPO: '発注書を表示',
+    createTitle: '発注書の作成',
+    viewTitle: '発注書',
+    supplierName: '仕入先名',
+    quantity: '数量',
+    unitCost: '単価',
+    expectedDelivery: '納品予定日',
+    notes: '備考（任意）',
+    total: '合計',
+    shortage: '不足数',
+    status: 'ステータス',
+    createdDate: '作成日',
+    poNumber: '発注書ID',
+    submit: '発注書を作成',
+    submitting: '作成中...',
+    loading: '発注書を読み込み中...',
+    loadFailed: '発注書の読み込みに失敗しました',
+    createFailed: '発注書の作成に失敗しました',
+    alreadyExists: 'この商品にはすでに発注書があります',
+    required: '必須',
+    close: '閉じる'
+  },
+
   // Common
   common: {
     loading: '読み込み中...',
