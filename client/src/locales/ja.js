@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '補充発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -112,6 +113,14 @@ export default {
     onTimeDelivery: '定時配達',
     itemsCount: '{count}件',
     quantity: '数量',
+    submittedOrders: {
+      title: '発注済みの注文',
+      empty: '補充発注はまだありません。補充発注タブから発注できます。',
+      submittedDate: '発注日',
+      leadTime: 'リードタイム',
+      leadTimeDays: '{days}日',
+      loadError: '発注済みの注文を読み込めませんでした'
+    },
     table: {
       orderNumber: '注文番号',
       orderId: '注文ID',
@@ -188,6 +197,40 @@ export default {
     }
   },
 
+  // Restocking
+  restocking: {
+    title: '補充発注',
+    description: '予算を設定し、需要予測の高い品目から補充します',
+    budget: '利用可能予算',
+    allocated: '割当額',
+    remaining: '残額',
+    itemsSelected: '発注品目数',
+    recommendations: '推奨補充',
+    recommendationsHint: '品目は需要トレンドと伸び率の順に並んでいます。チェックを外すと、その予算は次の品目に回ります。',
+    placeOrder: '発注する',
+    placingOrder: '発注中...',
+    noAllocation: '予算を増やすと推奨が表示されます',
+    successTitle: '注文 {orderNumber} を発注しました',
+    successBody: '配達予定日 {date}（リードタイム {days}日）',
+    viewOrders: '注文で確認',
+    submitError: '発注に失敗しました',
+    loadError: '需要予測を読み込めませんでした',
+    partial: '一部',
+    notFunded: '予算外',
+    excluded: '除外',
+    table: {
+      include: '対象',
+      sku: 'SKU',
+      item: '品目',
+      trend: 'トレンド',
+      forecast: '予測',
+      recommendedQty: '推奨数量',
+      unitCost: '単価',
+      lineTotal: '小計',
+      leadTime: 'リードタイム'
+    }
+  },
+
   // Filters
   filters: {
     timePeriod: '期間',
@@ -204,6 +247,7 @@ export default {
     shipped: '出荷済み',
     processing: '処理中',
     backordered: 'バックオーダー',
+    submitted: '発注済み',
     inStock: '在庫あり',
     lowStock: '在庫僅少',
     adequate: '適量'
@@ -311,6 +355,32 @@ export default {
     selectLanguage: '言語を選択'
   },
 
+  // Purchase Orders
+  purchaseOrder: {
+    createPO: '発注書を作成',
+    viewPO: '発注書を表示',
+    createTitle: '発注書の作成',
+    viewTitle: '発注書',
+    supplierName: '仕入先名',
+    quantity: '数量',
+    unitCost: '単価',
+    expectedDelivery: '納品予定日',
+    notes: '備考（任意）',
+    total: '合計',
+    shortage: '不足数',
+    status: 'ステータス',
+    createdDate: '作成日',
+    poNumber: '発注書ID',
+    submit: '発注書を作成',
+    submitting: '作成中...',
+    loading: '発注書を読み込み中...',
+    loadFailed: '発注書の読み込みに失敗しました',
+    createFailed: '発注書の作成に失敗しました',
+    alreadyExists: 'この商品にはすでに発注書があります',
+    required: '必須',
+    close: '閉じる'
+  },
+
   // Common
   common: {
     loading: '読み込み中...',
@@ -359,7 +429,14 @@ export default {
     '48V DC Power Supply Unit': '48V DC電源ユニット',
     'USB-C PD 100W Power Supply': 'USB-C PD 100W電源',
     'Battery Backup Power Supply': 'バッテリバックアップ電源',
-    'Adjustable Bench Power Supply': '可変ベンチ電源'
+    'Adjustable Bench Power Supply': '可変ベンチ電源',
+    'Industrial Widget Type A': '産業用ウィジェット タイプA',
+    'Steel Bearing Assembly': 'スチールベアリング組立',
+    'High-Temperature Gasket': '耐熱ガスケット',
+    'Electric Motor 5HP': '電動モータ 5HP',
+    'Oil Filter Cartridge': 'オイルフィルターカートリッジ',
+    'Pressure Relief Valve': '圧力逃し弁',
+    'Logic Controller Board': 'ロジックコントローラボード'
   },
 
   // Customer Names
